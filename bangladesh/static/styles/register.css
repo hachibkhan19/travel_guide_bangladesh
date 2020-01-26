@@ -1,0 +1,143 @@
+/* Start header part design */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gelasio', serif;
+
+}
+body{
+    font-family: 'Gelasio', serif;
+    background: #001224;
+}
+.header{
+    background: rgba(24,24,24,0.6);
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    color:white;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    float: left;
+}
+.logo a{
+    color: white;
+    text-decoration: none;
+}
+.logo a:hover{
+    text-decoration: underline;
+}
+.logo h1{
+    font-style: italic;
+}
+.log-in{
+    width: 70%;
+    float: left;
+}
+.log-in ul{
+    float: right;
+}
+.log-in ul li{
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 29px;
+    list-style-type: none;
+}
+.log-in ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-decoration: none;
+}
+.log-in ul li a:hover{
+    text-decoration: none;
+}
+/* End header part design */
+
+
+/* Start registration form part design */
+.sign-up-area{
+    background: #E6EAE9;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 70%;
+    margin: auto;
+}
+
+.register-form{
+    width: 55%;
+    margin: auto;
+}
+.register-form .l{
+    padding-top: 22px;
+}
+.register-form .u{
+    padding-top: 22px;
+}
+.register-form .e{
+    padding-top: 22px;
+}
+.register-form .p{
+    padding-top: 22px;
+}
+.register-form .cp{
+    padding-top: 22px;
+}
+.register-form .btn{
+    padding-top: 22px;
+}
+.register-form form .btn button{
+    padding: 6px;
+    cursor: pointer;
+}
+.register-form .info h2{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.register-form form input{
+    width: 90%;
+    padding: 7px;
+    border: 1px black solid;
+    margin-top: 10px;
+}
+
+/* End registration form part design */
+
+
+/* Start footer part design */
+.bottom{
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background: #1A1A1A;
+    text-align: center;
+}
+.bottom .social a{
+    padding: 0 15px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.social p{
+    color: white;
+}
+#f img{
+    width: 37px;
+}
+#l img{
+    width: 36px;
+    border-radius: 5px;
+}
+#gm img{
+    padding-top: 5px;
+    width: 40px;
+}
+#im img{
+    width: 35px;
+    border-radius: 5px;
+}
+/* End footer part design */

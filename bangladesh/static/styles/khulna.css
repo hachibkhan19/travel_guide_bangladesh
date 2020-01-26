@@ -1,0 +1,121 @@
+/* Start header part design */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gelasio', serif;
+
+}
+body{
+    font-family: 'Gelasio', serif;
+    background: #001224;
+}
+.header{
+    background: rgba(24,24,24,0.6);
+    width: 100%;
+    overflow: hidden;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    color:white;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    float: left;
+}
+.logo h1{
+    font-style: italic;
+}
+.log-in{
+    width: 70%;
+    float: left;
+}
+.log-in ul{
+    float: right;
+}
+.log-in ul li{
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 29px;
+    list-style-type: none;
+}
+.log-in ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-decoration: none;
+}
+.log-in ul li a:hover{
+    text-decoration: underline;
+}
+.dropdown-content{
+    background: #206A4E;
+    display: none;
+    position: absolute;
+    padding: 25px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    display: block;
+}
+/* End header part design */
+
+/* Start details part design */
+.details{
+    width: 100%;
+    float: left;
+    padding-bottom: 25px;
+}
+.img img{
+    width: 100%;
+    height: 550px;
+}
+.khulna p{
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: justify;
+    padding-bottom: 18px;
+    color: white;
+    line-height: 23px;
+}
+.log-in #d{
+    text-decoration: none;
+}
+/* End details part design */
+
+/* Start footer part design */
+.bottom{
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background: #1A1A1A;
+    text-align: center;
+}
+.bottom .social a{
+    padding: 0 15px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.social p{
+    color: white;
+}
+#f img{
+    width: 37px;
+}
+#l img{
+    width: 36px;
+    border-radius: 5px;
+}
+#gm img{
+    padding-top: 5px;
+    width: 40px;
+}
+#im img{
+    width: 35px;
+    border-radius: 5px;
+}
+/* End footer part design */

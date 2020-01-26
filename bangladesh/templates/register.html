@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bangladesh</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/register.css' %}">
+</head>
+<body>
+    <!--Start header part-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bangladesh</h1>
+            </div>
+            <div class="log-in">
+            </div>
+        </div>
+    </header>
+    <!--End header part-->
+    <div class="sign-up-area">
+        <div class="register-form">
+            <div class="info"><h2>Enter Personal Information</h2></div>    
+            <div class="message">                
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
+            </div>
+            <form action="register" method="POST">
+                {% csrf_token %}
+                <div class="f">
+                    <p><b>First Name</b>:</p>
+                    <p><input type="text" placeholder="First Name" name="first_name" required></p>
+                </div>
+                <div class="l">
+                    <p><b>Last Name</b>:</p>
+                    <p><input type="text" placeholder="Last Name" name="last_name" required></p>
+                </div>
+                <div class="u">
+                    <p><b>User Name</b>:</p>
+                    <p><input type="text" placeholder="Username" name="username" required></p>
+                </div>
+                <div class="e">
+                    <p><b>Email</b>:</p>
+                    <p><input type="email" placeholder="Email" name="email" required></p>
+                </div>
+                <div class="p">
+                    <p><b>Password</b>:</p>
+                    <p><input type="password" placeholder="Password" name="password1"></p>
+                </div>
+                <div class="cp">
+                    <p><b>Confirm Password</b>:</p>
+                    <p><input type="password" placeholder="Confirm Password" name="password2"></p>
+                </div>
+                <div class="btn">
+                    <button><b>Reset</b></button>
+                    <button><b>Submit</b></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Start footer part-->
+    <footer class="bottom">
+        <div class="social">
+            <a href="#" id="f"><img src="{% static 'images/fac.svg' %}" alt="Facebook"></a>
+            <a href="#" id="l"><img src="{% static 'images/l.svg' %}" alt="" alt="linkdin"></a>
+            <a href="#" id="gm"><img src="{% static 'images/gmail.svg' %}" alt="Gmail"></a>
+            <a href="#" id="im"><img src="{% static 'images/gith.png' %}" alt="Github"></a>
+            <p>Developed by &copy; Hachib khan</p>
+            <p>&hearts; Bangladesh &hearts; </p>
+        </div>
+    </footer>
+    <!--End footer part-->
+</body>
+</html>

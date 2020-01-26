@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rangpur</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/rangpur.css' %}">
+</head>
+<body>
+    <!--Start header part-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Rangpur</h1>
+            </div>
+            <div class="log-in">
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li class="dropdown">
+                    <a href="javascript:void(0)" id="d">Districts</a>
+                    <div class="dropdown-content">
+                        <a href="#">Dinajpur</a>
+                        <a href="#">Gaibandha</a>
+                        <a href="#">Kurigram </a>
+                        <a href="#">Lalmonirhat</a>
+                        <a href="#">Nilphamari</a>
+                        <a href="#">Panchagarh</a>
+                        <a href="#">Rangpur</a>
+                        <a href="#">Thakurgaon</a>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--End header part-->
+
+    <!--Start details part-->
+    <section class="details">
+        {% for rang in rangpur %}
+        <section>
+            <div class="img">
+                <img src="{{rang.img.url}}" alt="Rangpur">
+            </div>            
+        </section>
+        <section>
+            <div class="rangpur">
+                <p>{{rang.details}}</p>
+            </div>
+        </section>
+        {% endfor %}
+    </section>
+    <!--End details part-->
+
+    <!--Start footer part-->
+    <footer class="bottom">
+        <div class="social">
+            <a href="#" id="f"><img src="{% static 'images/fac.svg' %}" alt="Facebook"></a>
+            <a href="#" id="l"><img src="{% static 'images/l.svg' %}" alt="" alt="linkdin"></a>
+            <a href="#" id="gm"><img src="{% static 'images/gmail.svg' %}" alt="Gmail"></a>
+            <a href="#" id="im"><img src="{% static 'images/gith.png' %}" alt="Github"></a>
+            <p>Developed by &copy; Hachib khan</p>
+            <p>&hearts; Bangladesh &hearts; </p>
+        </div>
+    </footer>
+    <!--End footer part-->
+</body>
+</html>

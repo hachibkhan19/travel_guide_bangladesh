@@ -1,0 +1,265 @@
+/* Start header part design */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gelasio', serif;
+
+}
+body{
+    font-family: 'Gelasio', serif;
+    background: #001224;
+}
+.header{
+    background: rgba(24,24,24,0.6);
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.logo{
+    width: 30%;
+    color:white;
+    padding-top: 23px;
+    padding-bottom: 15px;
+    float: left;
+}
+.logo h1{
+    font-style: italic;
+}
+.log-in{
+    width: 70%;
+    float: left;
+}
+.log-in ul{
+    float: right;
+}
+.log-in ul li{
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 29px;
+    list-style-type: none;
+}
+.log-in ul li a{
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-decoration: none;
+}
+.log-in ul li a:hover{
+    text-decoration: underline;
+}
+/* End header part design */
+
+/* Start details part design */
+.details{
+    width: 100%;
+    float: left;
+    padding-bottom: 25px;
+}
+.img img{
+    width: 100%;
+}
+.bangladesh p{
+    padding-top: 10px;
+    font-weight: 500;
+    text-align: justify;
+    padding-bottom: 18px;
+    color: white;
+}
+.divisions{
+    width: 100%;
+    background:  rgba(24,24,24,0.6);
+}
+.divisions h1{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.dhaka{
+    float: left;
+}
+.dhaka a{
+    text-decoration: none;
+}
+.dhaka a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.dhaka img{
+    width: 590px;
+    height: 401px;
+}
+.dhaka h2{
+    text-align: center;
+    color: white;
+}
+.chittagong{
+    float: right;
+}
+.chittagong a{
+    text-decoration: none;
+}
+.chittagong a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.chittagong img{
+    width: 590px;
+    height: 401px;
+}
+.chittagong h2{
+    text-align: center;
+    color: white;
+}
+.dest2{
+    padding-top: 40px;
+}
+.barishal{
+    float: left;
+}
+.barishal a{
+    text-decoration: none;
+}
+.barishal a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.barishal img{
+    width: 590px;
+    height: 401px;
+}
+.barishal h2{
+    text-align: center;
+    color: white;
+}
+
+.mymensingh{
+    float: right;
+}
+.mymensingh a{
+    text-decoration: none;
+}
+.mymensingh a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.mymensingh img{
+    width: 590px;
+    height: 401px;
+}
+.mymensingh h2{
+    text-align: center;
+    color: white;
+}
+.khulna{
+    float: left;
+}
+.khulna a{
+    text-decoration: none;
+}
+.khulna a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.khulna img{
+    width: 590px;
+    height: 401px;
+}
+.khulna h2{
+    text-align: center;
+    color: white;
+}
+.rajshahi{
+    float: right;
+}
+.rajshahi a{
+    text-decoration: none;
+}
+.rajshahi a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.rajshahi img{
+    width: 590px;
+    height: 401px;
+}
+.rajshahi h2{
+    text-align: center;
+    color: white;
+}
+.rangpur{
+    float: left;
+}
+.rangpur a{
+    text-decoration: none;
+}
+.rangpur a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.rangpur img{
+    width: 590px;
+    height: 401px;
+}
+.rangpur h2{
+    text-align: center;
+    color: white;
+}
+
+.sylhet{
+    float: right;
+}
+.sylhet a{
+    text-decoration: none;
+}
+.sylhet a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.sylhet img{
+    width: 590px;
+    height: 401px;
+}
+.sylhet h2{
+    text-align: center;
+    color: white;
+}
+/* End details part design */
+
+/* Start footer part design */
+.bottom{
+    padding-top: 15px;
+    width: 100%;
+    overflow: hidden;
+    background: #1A1A1A;
+    text-align: center;
+}
+.bottom .social a{
+    padding: 0 15px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.social p{
+    color: white;
+}
+#f img{
+    width: 37px;
+}
+#l img{
+    width: 36px;
+    border-radius: 5px;
+}
+#gm img{
+    padding-top: 5px;
+    width: 40px;
+}
+#im img{
+    width: 35px;
+    border-radius: 5px;
+}
+/* End footer part design */

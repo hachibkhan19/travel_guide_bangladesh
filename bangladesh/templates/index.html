@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Bangladesh{% endblock %}
+{% block header %}
+    <header class="header">
+        <div class="container">
+            <div class="logo">                
+                <h1>Bangladesh</h1>                
+            </div>            
+            <div class="log-in">                
+                <ul>
+                    {% if user.is_authenticated %}
+                    <li><a href="accounts/logout">Log out</a></li>
+                    {% else %}                                        
+                    <li><a href="accounts/register">Register</a></li>
+                    <li><a href="accounts/login">Log in</a></li>
+                    {% endif %}
+                </ul>                
+            </div>
+        </div>        
+        </header>        
+        {% endblock %}        
+        {% block content %}               
+        <section class="details">
+            {% for f in bangla %}
+        <section>            
+            <div class="img">                
+                <img src="{{f.img.url}}" alt="Bangladeshi flag" title="Bangladesh" onmouseover="setNewimg()" id="img1">
+            </div>            
+        </section>        
+        <section>            
+            <div class="bangladesh">
+                <p>{{f.descriptions}}</p>
+            </div>
+        </section>
+        {% endfor %}
+        <section>            
+            <div class="divisions">
+                <h1>Divisions of Bangladesh</h1>
+            </div>
+        </section>
+        <section class="dest1">            
+            <div class="dhaka">
+                <img src="{% static 'images/dhaka.png' %}" alt="Dhaka" title="Dhaka">                
+                <a href="division/dhaka"><h2>Dhaka</h2></a>
+            </div>            
+            <div class="chittagong">
+                <img src="{% static 'images/chattogram.png' %}" alt="Chittagong" title="Chittagong">
+                <a href="division/chittagong"><h2>Chittagong</h2></a>
+            </div>
+        </section>
+        <section class="dest2">            
+            <div class="barishal">                
+                <img src="{% static 'images/barishal.png' %}" alt="Barishal" title="Barishal">
+                <a href="division/barishal"><h2>Barishal</h2></a>
+            </div>    
+            <div class="mymensingh">
+                <img src="{% static 'images/mymensingh.png' %}" alt="Mymensingh" title="Mymensingh">
+                <a href="division/mymensingh"><h2>Mymensingh</h2></a>
+            </div>
+        </section>
+        <section>
+            <div class="khulna">
+                <img src="{% static 'images/khulna.png' %}" alt="Khulna" title="Khulna">
+                <a href="division/khulna"><h2>Khulna</h2></a>
+            </div>        
+            <div class="rajshahi">
+                <img src="{% static 'images/rajshahi.jpg' %}" alt="Rajshahi" title="Rajshahi">
+                <a href="division/rajshahi"><h2>Rajshahi</h2></a>
+            </div>    
+        </section>
+        <section class="dest4">
+            <div class="rangpur">
+                <img src="{% static 'images/rangpur.png' %}" alt="Rangpur" title="Rangpur">
+                <a href="division/rangpur"><h2>Rangpur</h2></a>
+            </div>
+            <div class="sylhet">
+                <img src="{% static 'images/sylhet.png' %}" alt="Sylhet" title="Sylhet">
+                <a href="division/sylhet"><h2>Sylhet</h2></a>
+            </div>
+        </section>
+        </section>
+        {% endblock %}
+        {% block footer %}
+        {% endblock %}
+        

@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bangladesh</title>
+    <link href="https://fonts.googleapis.com/css?family=Gelasio:400,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/login.css' %}">
+</head>
+<body>
+    <!--Start header part-->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Bangladesh</h1>
+            </div>
+            <div class="log-in">
+            </div>
+        </div>
+    </header>
+    <!--End header part-->
+    <div class="sign-up-area">
+        <div class="register-form">
+            <div class="info"><h2>Log in</h2>                
+                <h4>Please login first</h4>
+            </div>
+            <div class="message">
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
+            </div>
+            <form action="login" method="POST">
+                {% csrf_token %}
+                <div class="u">
+                    <p><b>User Name</b>:</p>
+                    <p><input type="text" placeholder="User Name" name="username" required></p>
+                </div>
+                <div class="p">
+                    <p><b>Password</b>:</p>
+                    <p><input type="password" placeholder="Password" name="password"></p>
+                </div>
+                <div class="btn">
+                    <button><b>Login</b></button>
+                </div>
+                <div class="forgot">
+                    <a href="#"><h5>Forgot your password?</h5></a>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!--Start footer part-->
+    <footer class="bottom">
+        <div class="social">
+            <a href="#" id="f"><img src="{% static 'images/fac.svg' %}" alt="Facebook"></a>
+            <a href="#" id="l"><img src="{% static 'images/l.svg' %}" alt="" alt="linkdin"></a>
+            <a href="#" id="gm"><img src="{% static 'images/gmail.svg' %}" alt="Gmail"></a>
+            <a href="#" id="im"><img src="{% static 'images/gith.png' %}" alt="Github"></a>
+            <p>Developed by &copy; Hachib khan</p>
+            <p>&hearts; Bangladesh &hearts; </p>
+        </div>
+    </footer>
+    <!--End footer part-->
+</body>
+</html>    
